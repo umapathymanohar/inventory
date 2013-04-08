@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Crescent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="/assets/js/respond.min.js"></script>
+      <![endif]-->
+
+      <!-- Le fav and touch icons -->
+      <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    </head>
+    <body class="app"  id="home">
+     <header>
+       <div class="container">
+        <div class="row">
+          <div class="span9" style="margin-left:0;">
+            <ul id = "menu-bar" class="unstyled">
+              <li>
+                <a href="#" class="logo">Crescent</a>
+              </li>
+
+
+              <li >
+                <a class="active"href="#"> Dashboard</a>
+              </li>
+              <li>
+                <a href="#"> Customers</a>
+              </li>
+
+              <li>
+                <a href="#"> Stock</a>
+              </li>
+              <li>
+                <a href="#"> Invoices</a>
+              </li>
+            </ul>
+          </div>
+          <div class="span3" style="margin-left:40px;">
+            <ul id = "menu-bar" class="unstyled pull-right">
+              <li class="">
+                <a href="#"> &nbsp; </a>
+              </li>
+              <li class="">
+                <a href="#"> Log out</a>
+              </li>
+              <li >
+                <a href="#"> Settings
+                  <img alt="S" class=" settings-cog" id="cog" src="assets/images/s.gif">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </div>
+    </header>
+    <div id="page-head">
+
+      <div class="container">
+        <div class="row">
+
+          <h1>Clients <small>></small> Icelabs</h1>
+
+<div class="secondary_navigation">
+        <a href="#"   >
+          Work
+        </a>
+        <a href="#" >
+          Invoice History
+        </a>
+        <a class="new_invoice_link" href="#" >
+          New Invoice
+        </a>
+        <a href="#" class="selected">
+          <i class="icon-pencil"></i>
+          Edit Client
+        </a>
+      </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="main" class="" role="main">
+      <div class="container">
+       <div class="row">
+        <div class="span9">
+          <div class="box settings top">
+
+           <div class="title">
+            <h2>Client Details</h2>
+          </div>
+
+          <div class="row">
+            <div class="span2">
+
+              <div class="option_label">  
+                <label for="business_name" >Business name</label>
+              </div>
+
+            </div>
+            <div class="span7 margin-left-zero">
+
+              <div class="option_field">
+                <input id="business_name" type="text" value="" autofocus="" >
+              </div>
+            </div>
+          </div>
+
+          <hr class="min-padding">
+          <div class="row">
+            <div class="span2">
+
+              <div class="option_label">  
+                <label for="billing_contact_name">Contact name</label>
+              </div>
+
+            </div>
+            <div class="span7 margin-left-zero">
+
+              <div class="option_field">
+                <input id="billing_contact_name" type="text" value="">
+                <span class="field-desc">Who do you address your invoices to?</span>
+              </div>
+            </div>
+          </div>
+
+
+           <hr class="min-padding">
+          <div class="row">
+            <div class="span2">
+
+              <div class="option_label">  
+                <label for="billing_contact_name">Email Address</label>
+              </div>
+
+            </div>
+            <div class="span7 margin-left-zero">
+
+              <div class="option_field">
+                <input id="billing_contact_name" type="text" value="">
+                <span class="field-desc">What email address do you send your invoices to?</span>
+              </div>
+            </div>
+          </div>
+
+           <hr class="min-padding">
+          <div class="row">
+            <div class="span2">
+
+              <div class="option_label">  
+                <label for="billing_contact_name">Business Address</label>
+              </div>
+
+            </div>
+            <div class="span7 margin-left-zero">
+
+              <div class="option_field">
+                <textarea id="billing_address" rows="6" style="width: 250px"></textarea>
+                <span class="field-desc">This address is displayed on invoices.</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+
+    <hr class="min-padding space">
+         <div class="box settings top">
+
+           <div class="title">
+            <h2>Client Details</h2>
+          </div>
+
+ 
+          <div class="row">
+            <div class="span2">
+
+              <div class="option_label">  
+                <label for="billing_contact_name">Currency name</label>
+              </div>
+
+            </div>
+            <div class="span7 margin-left-zero">
+
+              <div class="option_field">
+                 <select name="" id=""></select>
+                <span class="field-desc">Changing this currency will also change the currency for all existing invoices, jobs and time logs for this client.</span>
+              </div>
+            </div>
+          </div>
+
+ 
+           <hr class="min-padding">
+          <div class="row">
+            <div class="span2">
+
+              <div class="option_label">  
+                <label for="billing_contact_name">Invoice language</label>
+              </div>
+
+            </div>
+            <div class="span7 margin-left-zero">
+
+              <div class="option_field">
+                <select name="" id=""></select>
+                <span class="field-desc">Changing the invoice language will also change the language for all existing invoices for this client. 
+Want to see your language here? Drop us a line and we'll get onto it.
+</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="span3">
+
+        <input class="massive" type="submit" value="Save Client">
+        <span class="cancel">
+          or
+          <a class="cancel" href="/clients" data-behaviour="backbone_link">Cancel</a>
+        </span>
+        <br>
+        <button class="pull-right action">Archive Client</button>
+        <br><br>
+        <button class="pull-right destroy">Delete Client</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /container -->
+
+<!-- /main -->
+
+<!-- <footer role="contentinfo" style="padding:0px;">
+  <div class="separator"></div>
+  <div class="container">
+    <div class="row">
+
+
+      <div class="span12">
+        <div class="text-center">
+          <img alt="" class="promo-indicus-lettermark" src="assets/images/s.gif">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="span12">
+        <p class="copy t-center">
+          © Copyright indicus – Keepin' Time Since MMXI</p>
+
+          <p class="copy t-center">Oh yeah, we also have a cool
+            <a href="http://www.indicushost.com" target="blank">Hosting Service</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </footer> -->
+
+<!-- Le javascript
+  ================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="assets/js/jquery.min.js"></script> 
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
