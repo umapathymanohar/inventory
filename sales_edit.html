@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Crescent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Le styles -->
+  <script src="assets/js/jquery.min.js"></script>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/css/ui-lightness/jquery-ui-1.10.2.custom.css" rel="stylesheet">
+  <script src="assets/js/jquery-ui-1.10.2.custom.js"></script>
+
+  <script>
+  $(function() {
+    $( ".datepicker" ).datepicker({
+      
+    });
+  });
+  </script>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="/assets/js/respond.min.js"></script>
+            <![endif]-->
+            <!-- Le fav and touch icons -->
+            <link rel="shortcut icon" href="/assets/images/favicon.ico">
+          </head>
+          <body class="app" id="home">
+            <header>
+              <div class="container">
+                <div class="row">
+                  <div class="span9" style="margin-left:0;">
+                    <ul id="menu-bar" class="unstyled">
+                      <li> <a href="#" class="logo">Crescent</a>
+
+                      </li>
+                      <li> <a class="active" href="#"> Dashboard</a>
+
+                      </li>
+                      <li> <a href="#"> Customers</a>
+
+                      </li>
+                      <li> <a href="#"> Stock</a>
+
+                      </li>
+                      <li> <a href="#"> Invoices</a>
+
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="span3" style="margin-left:40px;">
+                    <ul id="menu-bar" class="unstyled pull-right">
+                      <li class=""> <a href="#"> &nbsp; </a>
+
+                      </li>
+                      <li class=""> <a href="#"> Log out</a>
+
+                      </li>
+                      <li> <a href="#"> Settings
+                        <img alt="S" class=" settings-cog" id="cog" src="assets/images/s.gif">
+                      </a>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div id="page-head">
+            <div class="container">
+              <div class="row">
+               <h1>Clients <small>></small> Icelabs</h1>
+
+               <div class="title-links">
+                <a class="action" href="/invoices/18551/print" target="_blank"> <i class="icon-print"></i>
+                  Print</a>
+                  <a class="action" href="/invoices/18551.pdf" target="_blank"> <i class="icon-download-alt"></i>
+                    Download as PDF</a>
+                    <a class="action" href="/invoices/18551/view/u7s73aij0wharwmrk0dpd1iqipfiku9o" target="_blank"> <i class="icon-globe"></i>
+                      View online</a>
+                      <a class="action" id="delete_invoice" href="#" data-confirm="Are you sure you want to permanently delete this invoice?&lt;br&gt;&lt;/a&gt;&lt;br/&gt;Everything will go back to how it was before the invoice was created: all the work it contains will be marked as unbilled again."
+                      data-cancel_text="No, don't delete it" data-confirm_text="Yes, delete invoice"> <i class="icon-remove-sign"></i>
+                      Delete invoice</a>
+                    </div>
+                    <div class="secondary_navigation"> <a href="#" class="selected">
+                      Manage Invoice
+                    </a>
+
+                    <a href="#"> <i class="icon-pencil"></i>
+                      Edit Invoice</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="main" class="" role="main">
+                <div class="container">
+                  <div class="row">
+                    <div class="span9">
+
+                      <div id="invoice-page">
+                        <div class="row">
+                          <div class="span9">
+                            <div class="logo">
+                              <img src="assets/images/logo.png">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="span3" style="width:220px;">
+                            <h3 class="invoice-from">
+                              From
+                              &nbsp;
+                            </h3>
+                            <input type="text" name="account_business_name" placeholder="Your business name" value="UmapathY">
+                            <hr>
+                            <input type="text" name="account_contact_name" placeholder="Your name" value="Uma">
+                            <div class="account_address">
+                              <textarea class="street_address" name="account_address" rows="4" placeholder="Your address">Chennai</textarea>
+                            </div>
+                          </div>
+
+                          <div class="span3" style="width:220px;">
+                            <h3 class="invoice-from">
+                              To
+                              &nbsp;
+                            </h3>
+                            <input type="text" name="account_business_name" placeholder="Your business name" value="Icelabs">
+                            <hr>
+                            <input type="text" name="account_contact_name" placeholder="Your name" value="Jamal">
+                            <div class="account_address">
+                              <textarea class="street_address" name="account_address" rows="4" placeholder="Your address">Chennai</textarea>
+                            </div>
+                          </div>
+
+                          <div class="span3" >
+                            
+                            <div class="row">
+                              <div class="span1">
+                                
+                                <span class="invoice-type">Invoice</span>
+                            
+                            </div>
+
+                            <div class="span2">
+                              
+                              <div class="">
+                  jam&nbsp;-&nbsp;
+                  <input class="number" style="width:40px;" type="text" name="padded_number" value="002">
+                </div>
+
+                            </div>
+                          </div>
+
+
+                          <hr>
+                          <div class="row">
+                            
+                            <div class="span1">Date Issued:</div>
+                            <div class="span1">
+                              <input type="text" style="width:100px;" class="datepicker" />
+                               
+
+                            </div>
+                          </div>
+
+                         <div class="row">
+                            
+                            <div class="span1">Payment Due:</div>
+                            <div class="span1">
+                              <input type="text" style="width:100px;" class="datepicker" />
+                               
+
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+<div class="row">
+  
+  <div class="span8">
+    <table id="line_items">
+                  <tbody><tr>
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th class="description">Description</th>
+                    <th>Qty</th>
+                    <th>Unit Price</th>
+                    <th class="tax_header" data-id="0" style="display: none;"></th>
+                    <th class="tax_header" data-id="1" style="display: none;"></th>
+                    <th>
+                      <span class="right">Amount</span>
+                    </th>
+                  </tr>
+                  </tbody><tbody id="line_items" class="ui-sortable"><tr class="fields line_item" style=""><td style="width: 27px;">
+    <div class="controls">
+      <input type="hidden" name="position" value="0">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="reorder hide icons-handle" alt="" style="display: inline;">
+      <div class="outset_left_container" style="display: none;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="remove_line_item icons-remove" alt="">
+      </div>
+    </div>
+    </td>
+    <td style="width: 454px;">
+    <textarea class="line_item" name="description" rows="1" data-behaviour="autogrow" style="height: 30px;"></textarea>
+    </td>
+    <td style="width: 59px;">
+    <input class="line_item_quantity form-4" type="text" name="quantity">
+    </td>
+    <td class="unit_price" style="white-space: nowrap; width: 74px;">
+    <input class="form-5 inline line_item_rate" type="text" name="rate">
+    </td>
+    <td class="grey line_item_subtotal" style="width: 80px;">
+    <span>₹0.00</span>
+    </td></tr><tr class="fields line_item"><td>
+    <div class="controls">
+      <input type="hidden" name="position" value="1">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="reorder hide icons-handle" alt="" style="display: inline;">
+      <div class="outset_left_container" style="display: none;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="remove_line_item icons-remove" alt="">
+      </div>
+    </div>
+    </td>
+    <td>
+    <textarea class="line_item" name="description" rows="1" data-behaviour="autogrow" style="height: 30px;"></textarea>
+    </td>
+    <td>
+    <input class="line_item_quantity form-4" type="text" name="quantity">
+    </td>
+    <td class="unit_price" style="white-space: nowrap;">
+    <input class="form-5 inline line_item_rate" type="text" name="rate">
+    </td>
+    <td class="grey line_item_subtotal">
+    <span>₹0.00</span>
+    </td></tr><tr class="fields line_item"><td>
+    <div class="controls">
+      <input type="hidden" name="position" value="">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="reorder hide icons-handle" alt="" style="display: inline;">
+      <div class="outset_left_container" style="display: none;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="remove_line_item icons-remove" alt="">
+      </div>
+    </div>
+    </td>
+    <td>
+    <textarea class="line_item" name="description" rows="1" data-behaviour="autogrow" style="height: 30px;"></textarea>
+    </td>
+    <td>
+    <input class="line_item_quantity form-4" type="text" name="quantity">
+    </td>
+    <td class="unit_price" style="white-space: nowrap;">
+    <input class="form-5 inline line_item_rate" type="text" name="rate">
+    </td>
+    <td class="grey line_item_subtotal">
+    <span>₹0.00</span>
+    </td></tr></tbody>
+                  <tbody><tr>
+                    <td class="rule" colspan="5" data-original-colspan="5"></td>
+                  </tr>
+                  <tr class="add_fields">
+                    <td colspan="3" data-original-colspan="3">
+                      <div class="btn-group">
+                        <a class="add_line_item btn">Add a line item</a>
+                        <a class="btn dropdown-toggle" data-toggle="dropdown">
+                          <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <a href="/settings/invoicing#preset_line_items_container" target="_blank">Manage your preset line items</a>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <b class="right">Subtotal</b>
+                    </td>
+                    <td id="invoice_subtotal">₹0.00<span class="currency_code">INR</span></td>
+                  </tr>
+                  <tr class="tax_total" data-id="0" style="display: none;">
+                    <td colspan="4" data-original-colspan="4">
+                      <b class="right"></b>
+                    </td>
+                    <td class="tax_subtotal" id="invoice_tax_0" data-id="0">₹0.00<span class="currency_code">INR</span></td>
+                  </tr>
+                  <tr class="tax_total" data-id="1" style="display: none;">
+                    <td colspan="4" data-original-colspan="4">
+                      <b class="right"></b>
+                    </td>
+                    <td class="tax_subtotal" id="invoice_tax_1" data-id="1">₹0.00<span class="currency_code">INR</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" data-original-colspan="4">
+                      <b class="right">Total</b>
+                    </td>
+                    <td id="invoice_total">₹0.00<span class="currency_code">INR</span></td>
+                  </tr>
+                </tbody></table>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                      
+                    </div>
+    
+
+
+
+
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="container">
+
+                <div class="row">
+
+
+                  <div class="span12">
+                    <div class="section">
+                      <h2>Recent Work</h2>
+                    </div>
+
+                    <div class="box empty">
+                      <p class="text-center">
+                        No work logged in the last 14 days. Need to
+                        <a href="/time/log" data-behaviour="backbone_link">
+                          log some time worked
+                        </a>
+                        ?
+                      </p>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <hr class="space">
+              <!-- /container -->
+              <!-- /main -->
+              <footer role="contentinfo" style="padding:0px;">
+                <div class="separator"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="span12">
+                      <div class="text-center">
+                        <img alt="" class="promo-indicus-lettermark" src="assets/images/s.gif">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="span12">
+                      <p class="copy t-center">© Copyright indicus – Keepin' Time Since MMXI</p>
+                      <p class="copy t-center">Oh yeah, we also have a cool <a href="http://www.indicushost.com" target="blank">Hosting Service</a>
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            <!-- Le javascript==================================================- -> 
+            <!-- Placed at the end of the document so the pages load faster -->
+            
+            <script src="assets/js/bootstrap.js"></script>
+            <script src="assets/js/script.js"></script>
+          </body>
+
+          </html>

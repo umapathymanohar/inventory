@@ -6,362 +6,303 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <!-- Le styles -->
-
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/custom.css" rel="stylesheet">
   <link href="assets/css/font-awesome.css" rel="stylesheet">
-
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <script src="/assets/js/respond.min.js"></script>
-      <![endif]-->
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="/assets/js/respond.min.js"></script>
+            <![endif]-->
+            <!-- Le fav and touch icons -->
+            <link rel="shortcut icon" href="/assets/images/favicon.ico">
+          </head>
+          <body class="app" id="home">
+            <header>
+              <div class="container">
+                <div class="row">
+                  <div class="span9" style="margin-left:0;">
+                    <ul id="menu-bar" class="unstyled">
+                      <li> <a href="#" class="logo">Crescent</a>
 
-      <!-- Le fav and touch icons -->
-      <link rel="shortcut icon" href="/assets/images/favicon.ico">
-    </head>
-    <body class="app"  id="home">
-     <header>
-       <div class="container">
-        <div class="row">
-          <div class="span9" style="margin-left:0;">
-            <ul id = "menu-bar" class="unstyled">
-              <li>
-                <a href="#" class="logo">Crescent</a>
-              </li>
+                      </li>
+                      <li> <a class="active" href="#"> Dashboard</a>
+
+                      </li>
+                      <li> <a href="#"> Customers</a>
+
+                      </li>
+                      <li> <a href="#"> Stock</a>
+
+                      </li>
+                      <li> <a href="#"> Invoices</a>
+
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="span3" style="margin-left:40px;">
+                    <ul id="menu-bar" class="unstyled pull-right">
+                      <li class=""> <a href="#"> &nbsp; </a>
+
+                      </li>
+                      <li class=""> <a href="#"> Log out</a>
+
+                      </li>
+                      <li> <a href="#"> Settings
+                        <img alt="S" class=" settings-cog" id="cog" src="assets/images/s.gif">
+                      </a>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div id="page-head">
+            <div class="container">
+              <div class="row">
+               <h1>Clients <small>></small> Icelabs</h1>
+
+               <div class="title-links">
+                <a class="action" href="/invoices/18551/print" target="_blank"> <i class="icon-print"></i>
+                  Print</a>
+                  <a class="action" href="/invoices/18551.pdf" target="_blank"> <i class="icon-download-alt"></i>
+                    Download as PDF</a>
+                    <a class="action" href="/invoices/18551/view/u7s73aij0wharwmrk0dpd1iqipfiku9o" target="_blank"> <i class="icon-globe"></i>
+                      View online</a>
+                      <a class="action" id="delete_invoice" href="#" data-confirm="Are you sure you want to permanently delete this invoice?&lt;br&gt;&lt;/a&gt;&lt;br/&gt;Everything will go back to how it was before the invoice was created: all the work it contains will be marked as unbilled again."
+                      data-cancel_text="No, don't delete it" data-confirm_text="Yes, delete invoice"> <i class="icon-remove-sign"></i>
+                      Delete invoice</a>
+                    </div>
+                    <div class="secondary_navigation"> <a href="#" class="selected">
+                      Manage Invoice
+                    </a>
+
+                    <a href="#"> <i class="icon-pencil"></i>
+                      Edit Invoice</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="main" class="" role="main">
+                <div class="container">
+                  <div class="row">
+                    <div class="span9">
+                      <div id="invoice-page" class=""> 
+                        <i class="icon-refresh icon-spin spinner"></i>
+
+                        <div class="overlays">
+                          <div class="current draft">&nbsp;</div>
+                          <div class="sent">&nbsp;</div>
+                          <div class="overdue">&nbsp;</div>
+                          <div class="paid">&nbsp;</div>
+                        </div>
+
+                        <div id="invoice_contents">
+                          <div class="row">
+                            <div class="span9">
+                              <div class="row">
+                                <div class="logo_bar">
+                                  <img alt="Logo" src="https://paydirtapp.com/system/logos/3062/medium/logo.png?1365426175">
+                                </div>
+                              </div>
+                              <hr class="space">
+                              <div class="row">
+                                <div class="span2">
+                                 <h3 class="invoice-from">From UmapathY</h3> 
+                                 <div class="dark_grey">Uma
+                                  <p>Chennai</p>
+                                </div>
+                              </div>
+                              <div class="span2">
+                               <h3 class="invoice-to">To Icelabs</h3>
+
+                               <div class="dark_grey">Jamal
+                                <p>chennai</p>
+                              </div>
+                            </div>
+                            <div class="span1">&nbsp;</div>
+                            <div class="span3">
+                              <div class="row">
+                                <div class="span2">
+                                  <div class="invoice-number">Invoice</div>
+                                </div>
+                                <div class="span1">
+                                  <div class="text-center formatted-number">jam-001</div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row">
+                                <div class="span1"> <b>Date Issued:</b>
+
+                                </div>
+                                <div class="span2  "> <span class="pull-right">Mar 28, 2013</span>
+
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="span2"> <b>Payment Due:</b>
+
+                                </div>
+                                <div class="span1"> <span class="pull-right">Apr 2, 2013</span>
+
+                                </div>
+                              </div>
+                              <div class="amount_due">
+                                <div class="row ">
+                                  <div class="span2"> <b>Amount Due:</b>
+
+                                  </div>
+                                  <div class="span1"> <span class="pull-right">₹112.00<span class="currency_code">INR</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="span5">
+                             <h3 class="invoice-description">Description</h3>
+
+                             <hr class="min-padding">
+                             <div class="dark_grey">
+                              <p>23423</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="span8">
+                            <table id="line_items">
+                              <tbody>
+                                <tr>
+                                  <th class="description">Description</th>
+                                  <th>Qty</th>
+                                  <th class="unit-price">Unit Price</th>
+                                  <th class="line_item_subtotal">Amount</th>
+                                </tr>
+                                <tr class="line_item odd">
+                                  <td class="description">
+                                    <p>Yummy</p>
+                                  </td>
+                                  <td>1</td>
+                                  <td class="right">₹100</td>
+                                  <td class="line_item_subtotal">₹100.00</td>
+                                </tr>
+                                <tr class="even line_item">
+                                  <td class="description">
+                                    <p>Vonzoi</p>
+                                  </td>
+                                  <td>1</td>
+                                  <td class="right">₹12</td>
+                                  <td class="line_item_subtotal">₹12.00</td>
+                                </tr>
+                                <tr>
+                                  <td class="rule" colspan="4">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">&nbsp;</td>
+                                  <td> <b class="right">Subtotal</b>
+
+                                  </td>
+                                  <td id="invoice_subtotal">₹112.00<span class="currency_code">INR</span>
+
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">&nbsp;</td>
+                                  <td class="amount_due"> <b class="right">Total</b>
+
+                                  </td>
+                                  <td class="amount_due" id="invoice_total">₹112.00<span class="currency_code">INR</span>
+
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="dark_grey">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
 
-              <li >
-                <a class="active"href="#"> Dashboard</a>
-              </li>
-              <li>
-                <a href="#"> Customers</a>
-              </li>
+                </div>
+              </div>
+              <div class="span3">
+                <a class="action massive" id="" href="#"> <i class="icon-envelope"></i>
+                  &nbsp; Send Invoice</a> <span class="cancel">
+                  or
+                  <a class="cancel" href="#" >Mark it as Sent</a>
+                </span>
 
-              <li>
-                <a href="#"> Stock</a>
-              </li>
-              <li>
-                <a href="#"> Invoices</a>
-              </li>
-            </ul>
+              </div>
+
+
+
+
+
+            </div>
+
+
           </div>
-          <div class="span3" style="margin-left:40px;">
-            <ul id = "menu-bar" class="unstyled pull-right">
-              <li class="">
-                <a href="#"> &nbsp; </a>
-              </li>
-              <li class="">
-                <a href="#"> Log out</a>
-              </li>
-              <li >
-                <a href="#"> Settings
-                  <img alt="S" class=" settings-cog" id="cog" src="assets/images/s.gif">
-                </a>
-              </li>
-            </ul>
-          </div>
-
-
-
         </div>
-      </div>
-    </header>
-    <div id="page-head">
 
-      <div class="container">
-        <div class="row">
-
-          <h1>Clients <small>></small> Icelabs</h1>
-<div class="title-links">
- 
-        <a class="action" href="/invoices/18551/print" target="_blank">
-          <i class="icon-print"></i>
-          Print
-        </a>
-        <a class="action" href="/invoices/18551.pdf" target="_blank">
-          <i class="icon-download-alt"></i>
-          Download as PDF
-        </a>
-        <a class="action" href="/invoices/18551/view/u7s73aij0wharwmrk0dpd1iqipfiku9o" target="_blank">
-          <i class="icon-globe"></i>
-          View online
-        </a>
- 
-        <a class="action" id="delete_invoice" href="#" data-confirm="Are you sure you want to permanently delete this invoice?&lt;br&gt;&lt;/a&gt;&lt;br/&gt;Everything will go back to how it was before the invoice was created: all the work it contains will be marked as unbilled again." data-cancel_text="No, don't delete it" data-confirm_text="Yes, delete invoice">
-          <i class="icon-remove-sign"></i>
-          Delete invoice
-        </a>
-      </div>
-
-<div class="secondary_navigation">
-        <a href="#" class="selected"  >
-          Manage Invoice
-        </a>
+    <div class="container">
+      
+      <div class="row">
         
-        <a href="#" >
-          <i class="icon-pencil"></i>
-          Edit Invoice
+
+              <div class="span12">
+                <div class="section">
+                      <h2>Recent Work</h2>
+                    </div>
+
+                    <div class="box empty">
+      <p class="text-center">
+        No work logged in the last 14 days. Need to
+        <a href="/time/log" data-behaviour="backbone_link">
+          log some time worked
         </a>
-      </div>
-        </div>
-      </div>
-
+        ?
+      </p>
     </div>
-    <div id="main" class="" role="main">
-      <div class="container">
-
-
-
-<div class="row">
-  <div class="span9">
     
-  
-<div id="invoice-page" class="">
-<i class="icon-refresh icon-spin spinner"></i>
- 
- <div class="overlays">
-    <div class="current draft">
-      &nbsp;
-    </div>
-    <div class="sent">
-      &nbsp;
-    </div>
-    <div class="overdue">
-      &nbsp;
-    </div>
-    <div class="paid">
-      &nbsp;
-    </div>
-  </div>
+              </div>
 
-<div id="invoice_contents">
-
-   <div class="row">
-   <div class="span9">
-     
-<div class="row">
-  <div class="logo_bar">
-<img alt="Logo" src="https://paydirtapp.com/system/logos/3062/medium/logo.png?1365426175">
-</div>
-</div>
-<hr class="space">
-
-<div class="row">
-
-<div class="span2">
-  <h3 class="invoice-from">From UmapathY</h3>  
-  <div class="dark_grey">
-<hr>
-Uma
-<p>Chennai</p>
-</div>
-
-</div>  
-
-<div class="span2">
-  <h3 class="invoice-to">To Icelabs</h3>
-
-  <div class="dark_grey">
-<hr>
-Jamal
-<p>chennai</p>
-</div>
-
-</div>  
-
-
-<div class="span1">
-&nbsp;
-</div>
-
-<div class="span3">
-<div class="row">
-  
-  <div class="span2">
-    <h3 class="invoice-number">
-
-Invoice
-</h3>
-
-  </div>
-  <div class="span1">
-    <div class="right formatted-number">
-jam-001
-</div>
-
-  </div>
-
-</div>
-  
- 
-<hr>
-
-  <div class="row">
-<div class="span1">
-<b>Date Issued:</b>
-</div>
-<div class="span2  ">
-<span class="pull-right">Mar 28, 2013</span>
-</div>
-</div>
- 
-
- <div class="row">
-<div class="span1">
-<b>Payment Due:</b>
-</div>
-<div class="span2  ">
-<span class="pull-right">Apr 2, 2013</span>
-</div>
-</div>
-
-  <div class="row amount_due">
-<div class="span1">
-<b>Amount Due:</b>
-</div>
-<div class="span2">
-<span class="pull-right">₹112.00<span class="currency_code">INR</span></span>
-</div>
-</div>
-
-</div>  
-
-</div>
-
-
-
-
-<hr class="space">
-<div class="row">
-
-
-<div class="span8">
-<h3 class="invoice-description">Description</h3>
-
-<div class="dark_grey">
-<p>23423</p>
-<hr>
-</div>
-</div>
-</div>
-
-<div class="row">
-<div class="span8">
-<table id="line_items">
-<tbody><tr>
-<th class="description">Description</th>
-<th>Qty</th>
-<th class="unit-price">Unit Price</th>
-<th class="line_item_subtotal">Amount</th>
-</tr>
-<tr class="line_item odd">
-<td class="description">
-<p>Yummy</p>
-</td>
-<td>1</td>
-<td>
-₹100
-</td>
-<td class="line_item_subtotal">₹100.00</td>
-</tr>
-<tr class="even line_item">
-<td class="description">
-<p>Vonzoi</p>
-</td>
-<td>1</td>
-<td>
-₹12
-</td>
-<td class="line_item_subtotal">₹12.00</td>
-</tr>
-
-<tr>
-<td class="rule" colspan="4">&nbsp;</td>
-</tr>
-<tr>
-<td colspan="3">
-<b class="right">Subtotal</b>
-</td>
-<td id="invoice_subtotal">₹112.00<span class="currency_code">INR</span></td>
-</tr>
-<tr>
-<td colspan="2">
-&nbsp;
-</td>
-<td class="amount_due">
-<b class="right">Total</b>
-</td>
-<td class="amount_due" id="invoice_total">₹112.00<span class="currency_code">INR</span></td>
-</tr>
-</tbody></table>
-</div>
-</div>
-
-<div class="dark_grey">
-<p></p>
-</div></div>
-</div>
-
-
-
-
-   </div>
-
-  
-
- </div>
-    </div>
-     <div class="span3">
-     
-hi
-   </div>
-</div>
-
-  </div>
-</div>
-<!-- /container -->
-
-<!-- /main -->
-
-<!-- <footer role="contentinfo" style="padding:0px;">
-  <div class="separator"></div>
-  <div class="container">
-    <div class="row">
-
-
-      <div class="span12">
-        <div class="text-center">
-          <img alt="" class="promo-indicus-lettermark" src="assets/images/s.gif">
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-
-      <div class="span12">
-        <p class="copy t-center">
-          © Copyright indicus – Keepin' Time Since MMXI</p>
-
-          <p class="copy t-center">Oh yeah, we also have a cool
-            <a href="http://www.indicushost.com" target="blank">Hosting Service</a>
-          </p>
-        </div>
       </div>
     </div>
+    <hr class="space">
+          <!-- /container -->
+          <!-- /main -->
+          <footer role="contentinfo" style="padding:0px;">
+            <div class="separator"></div>
+            <div class="container">
+              <div class="row">
+                <div class="span12">
+                  <div class="text-center">
+                    <img alt="" class="promo-indicus-lettermark" src="assets/images/s.gif">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="span12">
+                  <p class="copy t-center">© Copyright indicus – Keepin' Time Since MMXI</p>
+                  <p class="copy t-center">Oh yeah, we also have a cool <a href="http://www.indicushost.com" target="blank">Hosting Service</a>
 
-  </footer> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+            <!-- Le javascript==================================================- -> 
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.js"></script>
+            <script src="assets/js/script.js"></script>
+          </body>
 
-<!-- Le javascript
-  ================================================== --> 
-  <!-- Placed at the end of the document so the pages load faster --> 
-  <script src="assets/js/jquery.min.js"></script> 
-  <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/script.js"></script>
-
-</body>
-</html>
+          </html>

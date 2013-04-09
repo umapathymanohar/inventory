@@ -1636,7 +1636,7 @@ padding: 0 15px;
   background-color:#fff;
   position:relative;
   margin:0;
-  min-height:1000px
+  /*min-height:1000px;*/
 }
 #invoice-page:before, #invoice-page:after {
   content:"";
@@ -1727,7 +1727,8 @@ padding: 0 15px;
 #invoice-page input[name$="business_name"], #invoice-page textarea[name$="business_name"], #invoice-page select[name$="business_name"], #invoice-page .faux_input[name$="business_name"] {
   margin:0;
   position:relative;
-  top:-8px
+  top:-8px;
+  
 }
 #invoice-page input:hover, #invoice-page textarea:hover, #invoice-page select:hover, #invoice-page .faux_input:hover {
   border:1px solid #999;
@@ -1778,7 +1779,7 @@ padding: 0 15px;
   font-size:14px
 }
 #invoice-page .formatted-number {
-  padding:5px;
+  
   border:1px solid #e3e3e3;
   margin-top:-6px;
   font-weight:bold;
@@ -1946,7 +1947,7 @@ textarea.invoice_payment_details {
   border:1px solid #e3e3e3;
   border-left:0;
   border-right:0;
-  padding:5px 10px;
+  padding:10px 0px;
   margin-top:5px;
   font-weight:bold;
   font-size:1.2em
@@ -1990,7 +1991,7 @@ table#line_items td.space {
 }
 table#line_items td.rule {
   padding:0;
-  border-top:1px solid #e3e3e3
+  border-top:2px solid #e3e3e3
 }
 table#line_items th {
   background-color:#f6f6f6;
@@ -2002,7 +2003,7 @@ table#line_items th {
   white-space:nowrap
 }
 table#line_items th.description {
-  min-width:380px
+  min-width:250px
 }
 table#line_items tbody.line_items_container tr:nth-child(odd) td {
   background-color:#fcfcfc
@@ -2073,18 +2074,23 @@ table#line_items #invoice_subtotal, table#line_items #invoice_tax, table#line_it
 .box.settings #invoice_payment_form, .box.settings #invoice_payments {
   border-top:1px solid rgba(0,0,0,0.1)
 
-
-.amount_due {
-background-color: #f6f6f6;
-border: 1px solid #e3e3e3;
-border-left: 0;
-border-right: 0;
-/*padding: 5px 10px;*/
-margin-top: 5px;
-font-weight: bold;
-font-size: 1.2em;
 }
+ 
 
 .dark_grey {
+color: #666;
+}
+
+.right {
+float: right !important;
+}
+
+
+.box.empty {
+padding-top: 37px;
+background-color: #f2f2f2;
+}
+
+.empty {
 color: #666;
 }
