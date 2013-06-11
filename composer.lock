@@ -1,8 +1,4 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
-    ],
     "hash": "92f764b651f42f3cb04ffd7d32e9bbbe",
     "packages": [
         {
@@ -757,12 +753,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "b41544f0c549b40002fa31a63a2c636fe0cb0cce"
+                "reference": "582e64fc32340a50e8e7b4522a9d89e94ab112cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/b41544f0c549b40002fa31a63a2c636fe0cb0cce",
-                "reference": "b41544f0c549b40002fa31a63a2c636fe0cb0cce",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/582e64fc32340a50e8e7b4522a9d89e94ab112cf",
+                "reference": "582e64fc32340a50e8e7b4522a9d89e94ab112cf",
                 "shasum": ""
             },
             "require": {
@@ -859,7 +855,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2013-06-10 22:13:14"
+            "time": "2013-06-11 01:27:24"
         },
         {
             "name": "laravelbook/ardent",

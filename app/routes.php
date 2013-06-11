@@ -22,3 +22,13 @@ Route::post('user/forgot_password',        'UserController@do_forgot_password');
 Route::get( 'user/reset_password/{token}', 'UserController@reset_password');
 Route::post('user/reset_password',         'UserController@do_reset_password');
 Route::get( 'user/logout',                 'UserController@logout');
+
+Route::resource('testings', 'TestingsController');
+
+Route::resource('productmasters', 'ProductmastersController');
+
+Route::resource('productcategories', 'ProductcategoriesController');
+
+Route::resource('customermasters', 'CustomermastersController');
+
+Route::resource('salesmasters', 'SalesmastersController');

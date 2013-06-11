@@ -49,7 +49,7 @@
 /*theme*/
 body{
 
-  background: url('/invo/public/assets/images/bg.png') !important;
+  background: url('/inventory/public/assets/images/bg.png') !important;
 }
 html {
   height: 100%;
@@ -481,7 +481,7 @@ form .form-actions {
 }
 
 body {
-  /*background: #f5f5f5 url(/invo/public/assets/images/tiny_grid.png);
+  /*background: #f5f5f5 url(/inventory/public/assets/images/tiny_grid.png);
   */  background: #f2f2f2;
 }
 
@@ -613,7 +613,7 @@ text-shadow: none;
 
 
 #content:before {
-  background-image: url("/invo/public/assets/images/lightgrey.png");
+  background-image: url("/inventory/public/assets/images/lightgrey.png");
   position: absolute;
 top: -4px;
 content: "";
@@ -682,13 +682,13 @@ height: 0px;
 img.promo-indicus-lettermark {
 width: 70px;
 height: 70px;
-/*background: url("/invo/public/assets/images/logo.png") no-repeat;*/
+/*background: url("/inventory/public/assets/images/logo.png") no-repeat;*/
 
-background: url("/invo/public/assets/images/sprite.png") -2057px -20px no-repeat;
+background: url("/inventory/public/assets/images/sprite.png") -2057px -20px no-repeat;
 
 }
 
-img.icons-social-facebook{width:33px;height:32px;background:url("/invo/public/assets/images/sprite.png") -978px -39px no-repeat}img.icons-social-linkedin{width:33px;height:33px;background:url("/invo/public/assets/images/sprite.png") -1011px -39px no-repeat}img.icons-social-rss{width:33px;height:32px;background:url("/invo/public/assets/images/sprite.png") -1044px -39px no-repeat}img.icons-social-twitter{width:33px;height:33px;background:url("/invo/public/assets/images/sprite.png") -1077px -39px no-repeat}img.icons-tick{width:14px;height:14px;background:url("/invo/public/assets/images/sprite.png") -1110px -48px no-repeat}
+img.icons-social-facebook{width:33px;height:32px;background:url("/inventory/public/assets/images/sprite.png") -978px -39px no-repeat}img.icons-social-linkedin{width:33px;height:33px;background:url("/inventory/public/assets/images/sprite.png") -1011px -39px no-repeat}img.icons-social-rss{width:33px;height:32px;background:url("/inventory/public/assets/images/sprite.png") -1044px -39px no-repeat}img.icons-social-twitter{width:33px;height:33px;background:url("/inventory/public/assets/images/sprite.png") -1077px -39px no-repeat}img.icons-tick{width:14px;height:14px;background:url("/inventory/public/assets/images/sprite.png") -1110px -48px no-repeat}
 
 
 
@@ -813,7 +813,7 @@ text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
 position: absolute;
 width: 32px;
 height: 31px;
-background-image: url('/invo/public/assets/images/arrow.png');
+background-image: url('/inventory/public/assets/images/arrow.png');
 right: 20px;
 top: 10px;
 display: block;
@@ -948,7 +948,7 @@ float: left;
 
 #menu-bar li {
 display: inline-block;
-background-image: url("/invo/public/assets/images/header_separator.png");
+background-image: url("/inventory/public/assets/images/header_separator.png");
 background-position: right 0;
 background-repeat: no-repeat;
 height: 100%;
@@ -965,7 +965,7 @@ float: left;
 img.settings-cog {
 width: 21px;
 height: 21px;
-background: url("/invo/public/assets/images/sprite.png") -2127px -45px no-repeat;
+background: url("/inventory/public/assets/images/sprite.png") -2127px -45px no-repeat;
 }
 
 #cog {
@@ -998,7 +998,7 @@ font-weight: 600;
 }
 
 body.app footer .separator {
-background-image: url("/invo/public/assets/images/lightgrey-to-darkgrey.png");
+background-image: url("/inventory/public/assets/images/lightgrey-to-darkgrey.png");
 display: block;
 width: 100%;
 height: 4px;
@@ -1008,7 +1008,7 @@ margin-top: -1px;
 }
 
 body.app footer {
-background-image: url("/invo/public/assets/images/plan_bg.png");
+background-image: url("/inventory/public/assets/images/plan_bg.png");
 background-position: 0 0;
 background-repeat: repeat;
 position: relative;
@@ -1020,7 +1020,7 @@ position: relative;
 #main {
 min-height: 600px;
 background-color: #e2e2e2;
-background-image: url("/invo/public/assets/images/bg_noise.png")
+background-image: url("/inventory/public/assets/images/bg_noise.png")
 }
 
 #main hr.double {
@@ -1290,7 +1290,7 @@ hr.min-padding{
   .secondary_navigation a  {vertical-align:bottom;display:inline-block;padding:0 15px;height:35px;line-height:35px;color:#fff;font-size:15px;background-color:#fff;background-color:transparent;margin:0;-moz-border-radius:3px 3px 0 0;-webkit-border-radius:3px 3px 0 0;-o-border-radius:3px 3px 0 0;-ms-border-radius:3px 3px 0 0;-khtml-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0;background:rgba(0,0,0,0.05);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.05);-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.05);-o-box-shadow:inset 0 1px 2px rgba(0,0,0,0.05);-ms-box-shadow:inset 0 1px 2px rgba(0,0,0,0.05);-khtml-box-shadow:inset 0 1px 2px rgba(0,0,0,0.05);box-shadow:inset 0 1px 2px rgba(0,0,0,0.05)}
   .secondary_navigation a:hover{background:rgba(0,0,0,0.1)}
   .secondary_navigation a.disabled{color:rgba(255,255,255,0.6) !important}
-  .secondary_navigation a.selected{background-color:#eee;background-image:url("/invo/public/assets/images/bg_noise.png");color:#41829c !important;-moz-box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);-o-box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);-ms-box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);-khtml-box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);position:relative;bottom:-3px;padding-bottom:3px}
+  .secondary_navigation a.selected{background-color:#eee;background-image:url("/inventory/public/assets/images/bg_noise.png");color:#41829c !important;-moz-box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);-o-box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);-ms-box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);-khtml-box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);position:relative;bottom:-3px;padding-bottom:3px}
   .secondary_navigation a i{margin:0 6px 0 0}
 
 
@@ -1453,7 +1453,7 @@ background-clip: padding-box;
 
 
 div.invoice.grid .tag.draft {
-background-image: url("/invo/public/assets/images/draft_flag.png");
+background-image: url("/inventory/public/assets/images/draft_flag.png");
 background-color: #dfa404;
 }
 
@@ -1544,7 +1544,7 @@ div.invoice.grid .tag:after {
 content: "";
 background-repeat: no-repeat;
 background-position: right top;
-background-image: url("/invo/public/assets/images/flag_cut.png");
+background-image: url("/inventory/public/assets/images/flag_cut.png");
 width: 8px;
 height: 22px;
 position: absolute;
@@ -1695,16 +1695,16 @@ padding: 0 15px;
   height:100px
 }
 #invoice-page .overlays .draft {
-  background-image:url("/invo/public/assets/images/draft.png")
+  background-image:url("/inventory/public/assets/images/draft.png")
 }
 #invoice-page .overlays .sent {
-  background-image:url("/invo/public/assets/images/sent.png")
+  background-image:url("/inventory/public/assets/images/sent.png")
 }
 #invoice-page .overlays .paid {
-  background-image:url("/invo/public/assets/images/paid.png")
+  background-image:url("/inventory/public/assets/images/paid.png")
 }
 #invoice-page .overlays .overdue {
-  background-image:url("/invo/public/assets/images/overdue.png")
+  background-image:url("/inventory/public/assets/images/overdue.png")
 }
 #invoice-page {
   padding:2em 3.5em;
