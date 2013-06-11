@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'umapathymanohar@gmail.com', 'name' => 'umapathymanohar'),
+	'from' => array('address' => 'umapathy@icelabs.com', 'name' => 'umapathymanohar'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'umapathymanohar',
+	'username' => 'umapathy',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'Abhin@0v123',
+	'password' => 'abhinaav',
 
 	/*
 	|--------------------------------------------------------------------------
