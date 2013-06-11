@@ -67,7 +67,7 @@ class UserController extends BaseController {
         {
             // If user is logged, redirect to internal 
             // page, change it to '/admin', '/dashboard' or something
-            return Redirect::to('/');
+            return Redirect::to('dashboard');
         }
         else
         {
@@ -102,7 +102,7 @@ class UserController extends BaseController {
                 return Redirect::to($r);
             }
             
-            return Redirect::to('/'); // change it to '/admin', '/dashboard' or something
+            return Redirect::to('dashboard'); // change it to '/admin', '/dashboard' or something
         }
         else
         {

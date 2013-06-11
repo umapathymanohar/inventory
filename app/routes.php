@@ -32,3 +32,19 @@ Route::resource('productcategories', 'ProductcategoriesController');
 Route::resource('customermasters', 'CustomermastersController');
 
 Route::resource('salesmasters', 'SalesmastersController');
+
+Route::resource('salesdetails', 'SalesdetailsController');
+
+Route::resource('stockmasters', 'StockmastersController');
+
+Route::resource('salesreturns', 'SalesreturnsController');
+
+Route::resource('salesreturndetails', 'SalesreturndetailsController');
+
+Route::resource('purchasereturndetails', 'PurchasereturndetailsController');
+
+Route::resource('purchasereturns', 'PurchasereturnsController');
+
+Route::resource('purchasemasters', 'PurchasemastersController');
+
+Route::resource('purchasedetails', 'PurchasedetailsController');
